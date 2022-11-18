@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCalculate" />
+
+    <EditText
+        android:id="@+id/etLiters"
+        android:layout_width="104dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="44dp"
+        android:ems="10"
+        android:hint="L"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/tvLpL"
+        app:layout_constraintTop_toBottomOf="@+id/etLaps" />
+
+    <TextView
+        android:id="@+id/tvLpL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Liters per Lap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRaceTime" />
+
+    <TextView
+        android:id="@+id/tvRaceTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Race Lenght"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etLaps"
+        android:layout_width="60dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:ems="10"
+        android:hint="Laps"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/tvRaceTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="kilk"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLiters" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

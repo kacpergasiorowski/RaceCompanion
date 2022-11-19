@@ -1,11 +1,11 @@
 package com.example.racecompanion
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import kotlin.math.roundToInt
 
 class RaceTimeActivity : AppCompatActivity() {
@@ -16,6 +16,8 @@ class RaceTimeActivity : AppCompatActivity() {
             text = ""
         }
     }
+
+
     fun CalculateTime(view: View) {
         val checkTimeH = findViewById<EditText>(R.id.eTRTRaceTimeHH)
         val checkTimeM = findViewById<EditText>(R.id.eTRTRaceTimeMM)

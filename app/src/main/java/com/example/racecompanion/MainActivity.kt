@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import kotlin.math.roundToInt
 
 
 class MainActivity : AppCompatActivity() {
@@ -40,8 +41,9 @@ class MainActivity : AppCompatActivity() {
             var lapsX = 0 + laps
             var litersX = 0 + liters
             val calc = lapsX * litersX + litersX
+            val calcX = calc.roundToInt()
             val apply = findViewById<TextView>(R.id.tvDisplay).apply {
-                text = calc.toString() + " liters for " + lapsX + " +1 laps."
+                text = calcX.toString() + " liters for " + lapsX.roundToInt() + " +1 laps."
             }
         }
     }

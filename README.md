@@ -1,7 +1,7 @@
 # **RaceCompanion**
-***
-Autor: Kacper Gąsiorowski
 
+Autor: Kacper Gąsiorowski
+***
 ## O aplikacji:
 Aplikacja służy do obliczania ilę paliwa trzeba zatankować aby przejechać daną liczbę okrążeń na torze wyścigowym, lub ile paliwa trzeba zatankować aby przejechać dany czas sesji wyścigowej.
 

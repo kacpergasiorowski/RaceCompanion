@@ -6,4 +6,108 @@
     android:layout_height="match_parent"
     tools:context=".RaceTimeActivity">
 
+    <EditText
+        android:id="@+id/eTRTLiters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:width="100dp"
+        android:ems="10"
+        android:hint="Liters"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/tvRTFuel"
+        app:layout_constraintTop_toBottomOf="@+id/eTRTLapTimeSS" />
+
+    <EditText
+        android:id="@+id/eTRTLapTimeSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="50dp"
+        android:ems="10"
+        android:hint="SS"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/eTRTLapTimeMM"
+        app:layout_constraintTop_toBottomOf="@+id/eTRTRaceTimeMM" />
+
+    <EditText
+        android:id="@+id/eTRTLapTimeMM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:width="50dp"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/tvRTFuel"
+        app:layout_constraintTop_toBottomOf="@+id/eTRTRaceTimeHH" />
+
+    <EditText
+        android:id="@+id/eTRTRaceTimeMM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="50dp"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/eTRTRaceTimeHH"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRTRaceTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Race Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRTLapTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lap Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRTRaceTime" />
+
+    <TextView
+        android:id="@+id/tvRTFuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel per Lap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRTLapTime" />
+
+    <EditText
+        android:id="@+id/eTRTRaceTimeHH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:width="50dp"
+        android:ems="10"
+        android:hint="HH"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/tvRTFuel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bTRTCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="CalculateTime"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTRTLiters" />
+
+    <TextView
+        android:id="@+id/tVRTDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bTRTCalculate" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

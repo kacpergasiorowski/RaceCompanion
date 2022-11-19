@@ -4,18 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/furka"
+    android:backgroundTint="#B0000000"
+    android:backgroundTintMode="src_over"
     tools:context=".RaceTimeActivity">
 
     <EditText
         android:id="@+id/eTRTLiters"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:width="100dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Liters"
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toEndOf="@+id/tvRTFuel"
+        android:textColor="@color/white"
+        android:textColorHint="#4DFFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/eTRTRaceTimeHH"
         app:layout_constraintTop_toBottomOf="@+id/eTRTLapTimeSS" />
 
     <EditText
@@ -23,32 +29,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="50dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="SS"
         android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="#4DFFFFFF"
         app:layout_constraintStart_toEndOf="@+id/eTRTLapTimeMM"
-        app:layout_constraintTop_toBottomOf="@+id/eTRTRaceTimeMM" />
+        app:layout_constraintTop_toTopOf="@+id/eTRTLapTimeMM" />
 
     <EditText
         android:id="@+id/eTRTLapTimeMM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:width="50dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="MM"
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toEndOf="@+id/tvRTFuel"
+        android:textColor="@color/white"
+        android:textColorHint="#4DFFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/eTRTRaceTimeHH"
         app:layout_constraintTop_toBottomOf="@+id/eTRTRaceTimeHH" />
 
     <EditText
         android:id="@+id/eTRTRaceTimeMM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:width="50dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="MM"
         android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="#4DFFFFFF"
         app:layout_constraintStart_toEndOf="@+id/eTRTRaceTimeHH"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -56,7 +72,11 @@
         android:id="@+id/tvRTRaceTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Race Time"
+        android:textColor="@color/white"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -64,27 +84,37 @@
         android:id="@+id/tvRTLapTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Lap Time"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvRTRaceTime"
         app:layout_constraintTop_toBottomOf="@+id/tvRTRaceTime" />
 
     <TextView
         android:id="@+id/tvRTFuel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
         android:text="Fuel per Lap"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvRTLapTime"
         app:layout_constraintTop_toBottomOf="@+id/tvRTLapTime" />
 
     <EditText
         android:id="@+id/eTRTRaceTimeHH"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
         android:width="50dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="HH"
         android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="#4DFFFFFF"
         app:layout_constraintStart_toEndOf="@+id/tvRTFuel"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -92,9 +122,12 @@
         android:id="@+id/bTRTCalculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/RCyelow"
         android:onClick="CalculateTime"
         android:text="Calculate"
+        android:textColor="@color/ic_launcher_background"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTRTLiters" />
@@ -103,7 +136,9 @@
         android:id="@+id/tVRTDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="TextView"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

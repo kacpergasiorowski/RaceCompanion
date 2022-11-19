@@ -4,15 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/furka"
+    android:backgroundTint="#B0000000"
+    android:backgroundTintMode="src_over"
     tools:context=".RaceLapsActivity">
 
     <TextView
         android:id="@+id/tvDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textColorHint="#4DFFFFFF"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -23,21 +29,27 @@
         android:id="@+id/etLiters"
         android:layout_width="104dp"
         android:layout_height="43dp"
-        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="L"
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toEndOf="@+id/tvLpL"
+        android:textColor="@color/white"
+        android:textColorHint="#4DFFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/etLaps"
         app:layout_constraintTop_toBottomOf="@+id/etLaps" />
 
     <TextView
         android:id="@+id/tvLpL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
         android:text="Liters per Lap"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textColorHint="#4DFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvRaceTime"
         app:layout_constraintTop_toBottomOf="@+id/tvRaceTime" />
 
     <TextView
@@ -46,7 +58,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
         android:text="Race Lenght"
+        android:textColor="@color/white"
+        android:textColorHint="#4DFFFFFF"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,20 +70,27 @@
         android:id="@+id/etLaps"
         android:layout_width="60dp"
         android:layout_height="41dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Laps"
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toEndOf="@+id/tvRaceTime"
+        android:textColor="@color/white"
+        android:textColorHint="#4DFFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/tvLpL"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btCalculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/RCyelow"
         android:onClick="kilk"
-        android:text="Button"
+        android:text="Calculate"
+        android:textColor="@color/ic_launcher_background"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etLiters" />

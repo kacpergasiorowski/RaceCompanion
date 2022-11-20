@@ -59,14 +59,21 @@ class RaceTimeActivity : AppCompatActivity() {
             var tl = tlMM + tlSS
             var fl = findViewById<EditText>(R.id.eTRTLiters).text.toString().toDouble()
 
-            val Fuel = (rt/tl)*fl+(2*fl)
-            val FuelX = Fuel.roundToInt()
+            if (rtMM > 3540 || tlSS > 59){
+                val apply = findViewById<TextView>(R.id.tVRTDisplay).apply {
+                    text = "Please enter corect values"
+                }
+            }
+            else {
+                val Fuel = (rt/tl)*fl+(2*fl)
+                val FuelX = Fuel.roundToInt()
 
-            val Laps = rt / tl + 1
-            val LapsX = Laps.roundToInt()
+                val Laps = rt / tl + 1
+                val LapsX = Laps.roundToInt()
 
-            val apply = findViewById<TextView>(R.id.tVRTDisplay).apply {
-                text = FuelX.toString() + " liters for " + LapsX.toString() + "+ 2 laps"
+                val apply = findViewById<TextView>(R.id.tVRTDisplay).apply {
+                    text = FuelX.toString() + " liters for " + LapsX.toString() + "+ 2 laps"
+                }
             }
         }
     }

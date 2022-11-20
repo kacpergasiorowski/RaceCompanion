@@ -66,7 +66,7 @@ class RaceTimeActivity : AppCompatActivity() {
             val LapsX = Laps.roundToInt()
 
             val apply = findViewById<TextView>(R.id.tVRTDisplay).apply {
-                text = FuelX.toString() + " liters for " + LapsX.toString() + " laps"
+                text = FuelX.toString() + " liters for " + LapsX.toString() + "+ 2 laps"
             }
         }
     }
